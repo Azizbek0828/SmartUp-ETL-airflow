@@ -1,0 +1,11 @@
+{
+    "username": "your_username",
+    "password": "your_password",
+    "PROJECT_CODE": "trade",
+    "FILIAL_ID": "",
+
+    "database": "smartup",
+    "user": "postgres",
+    "database_password": "your_db_password",
+    "host": "host.docker.internal"
+}

@@ -1,0 +1,13 @@
+# Maxfiy fayllar
+.env
+auth.json
+
+# Virtual muhit
+my_env/
+
+# Keraksiz fayllar
+__pycache__/
+*.pyc
+logs/
+
+config/airflow.cfg
