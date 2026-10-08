@@ -8,8 +8,6 @@ ENDPOINTS = {
     'order': 'https://smartup.online/b/trade/txs/tdeal/order$export'
 }
 
-## db_url
-
 #
 with open('auth.json', 'r') as file:
     data = json.load(file)
@@ -18,7 +16,10 @@ PROJECT_CODE = data['PROJECT_CODE']
 FILIAL_ID    = data['FILIAL_ID']
 username = data['username']
 password = data['password']
-db_url = data['db_url']
+db_url = (
+    f"postgresql+psycopg2://{data['user']}:{data['database_password']}"
+    f"@{data['host']}:5432/{data['database']}"
+)
 
 def get_headers():
     token = base64.b64encode(
