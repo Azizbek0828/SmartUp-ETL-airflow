@@ -4,8 +4,8 @@
     "PROJECT_CODE": "trade",
     "FILIAL_ID": "",
 
-    "database": "smartup",
-    "user": "postgres",
+    "database": "your_database_name",
+    "user": "your_db_user",
     "database_password": "your_db_password",
     "host": "host.docker.internal"
 }
